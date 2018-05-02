@@ -1,0 +1,37 @@
+nav {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  z-index: 9999;
+  color: white;
+}
+.nav--section {
+  position: relative;
+}
+.is-top--section {
+  padding: 1em 0em;
+}
+
+.sr-only { @include sr-only(); }
+
+.mt-trigger {
+  height: 40px;
+  width: 35px;
+  position: absolute;
+  top: 50%; right: 0;
+  margin-top: 2px;
+  transform: translateY(-50%);
+  cursor: pointer;
+
+  span {
+    height: 2px;
+    width: 80%;
+    left: 10%;
+    background: white;
+    position: absolute;
+  }
+}
+
+.mt-top { top: 8px; }
+.mt-mid { top: 16px; }
+.mt-btm { top: 24px; }

@@ -1,0 +1,48 @@
+// Table of Contents 
+
+// 1) Colors
+// =========
+// 2) Line Heights
+// ===============
+// 3) Gutters and Containers
+// =========================
+// 4) Breakpoints 
+// ==============
+// 5) Font Face
+// ============
+// ============================================================
+
+// 1) Colors
+// =========
+$primaryColor: #EEE799;
+$secondaryColor: #eeeeee;
+$accentColor: #dddddd;
+
+
+
+// 2) Line Heights
+// ===============
+$lineHeight: 1.6;
+
+
+
+// 3) Gutters and Containers
+// =========================
+$maxWidth: 1440px;
+
+
+
+// 4) Breakpoints
+// ==============
+$sm: 580px;
+$md: 767px;
+$lg: 992px;
+$xl: 1199px;
+$xxl: 1440px;
+
+
+
+// 5) Fonts
+// ========
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,900');
+$sansPro: 'Source Sans Pro', sans-serif;

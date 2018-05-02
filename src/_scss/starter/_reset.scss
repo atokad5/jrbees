@@ -1,0 +1,46 @@
+body, 
+figure {
+	margin: 0;
+}
+
+button,
+input,
+textarea {
+	outline: none;
+	box-shadow: none;
+	border: none;
+	background: transparent;
+	-webkit-appearance: none;
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+ul {
+	margin: 0;
+	padding: 0.3em 0em;
+	list-style-type: none;
+}
+
+.cta {
+	display: inline-block;
+}
+
+
+a { text-decoration: none; }
+
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	margin: 0;
+	padding: 0em;
+}
+
+section,
+header,
+footer {
+	position: relative;
+}

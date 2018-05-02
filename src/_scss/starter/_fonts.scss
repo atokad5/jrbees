@@ -1,0 +1,57 @@
+
+body {
+	line-height: $lineHeight;
+	font-family: $sansPro;
+	font-size: 85%;
+}
+
+
+p, 
+a, 
+li, 
+span {
+	font-size: 1.1em;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+	font-weight: 600;
+}
+@media(min-width: $sm) {
+	body {
+		font-size: 88%;
+	}
+	.inner-content--hdr {
+		font-size: 100%;
+	}
+}
+
+@media(min-width: $md) {
+	body {
+		font-size: 92%;
+	}
+	.inner-content--hdr {
+		font-size: 110%;
+	}
+}
+
+@media(min-width: $lg) {
+	body {
+		font-size: 95%;
+	}
+	.inner-content--hdr {
+		font-size: 120%;
+	}
+}
+
+@media(min-width: $xl) {
+	body {
+		font-size: 100%;
+	}
+	.inner-content--hdr {
+		font-size: 125%;
+	}
+}
