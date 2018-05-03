@@ -4,17 +4,21 @@ export default function() {
     let nav = $('nav');
     let menuTrigger = $('.mt-trigger');
     let menuIsShowing = false;
+    let navParent = $('.nav-parent');
 
     const initMenu = () => {
       console.log('working')
       if(!menuIsShowing) {
         
         body.addClass('menu-is-showing');
-        menuIsShowing = false;
+        navParent.slideDown(100);
+        nav.addClass('showing-items');
+        menuIsShowing = true;
       } else {
         body.removeClass('menu-is-showing');
-
-        menuIsShowing = true;
+        navParent.slideUp(100);
+        nav.removeClass('showing-items');
+        menuIsShowing = false;
       }
     }
 

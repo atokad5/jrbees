@@ -7,7 +7,9 @@
       <div class="inner-container--hdr">
         <h1>LICENSED BEE REMOVAL SERVICE</h1>
         <p>Here is some body copy to populate here. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloremque officia repellat commodi animi reprehenderit. Eum esse culpa ratione animi quasi asperiores, doloremque sapiente ad consequatur iste rerum debitis amet incidunt?</p>
-        <a href="" class="cta">SCHEDULE TODAY!</a>
+        <a href="" class="cta">
+          SCHEDULE TODAY!
+        </a>
       </div>
     </div>
   </div>
@@ -20,7 +22,7 @@
       </div>
     </div>
   </div>
-  <div class="is-hero--bg" style="background-image: url(<?php echo "$root/dist/images/home-hero.jpg"; ?>);"></div>
+  <div class="is-hero--bg is-bg" data-bg-src="<?php echo "$root/dist/images/home-hero.jpg"; ?>"></div>
 </header>
 
 <?php get_footer(); ?>

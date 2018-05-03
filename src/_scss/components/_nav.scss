@@ -9,7 +9,7 @@ nav {
   position: relative;
 }
 .is-top--section {
-  padding: 1em 0em;
+  padding: 1.5em 0em;
 }
 
 .sr-only { @include sr-only(); }
@@ -26,12 +26,91 @@ nav {
   span {
     height: 2px;
     width: 80%;
-    left: 10%;
+    left: 20%;
     background: white;
     position: absolute;
+    transition: all 100ms ease;
   }
 }
 
 .mt-top { top: 8px; }
 .mt-mid { top: 16px; }
 .mt-btm { top: 24px; }
+
+.nav-parent {
+  display: none;
+}
+
+.menu-is-showing {
+  nav {background: black;}
+  .site--name { color: $primaryColor; }
+  .mt-top { top: 16px; transform: rotate(45deg); width: 70%; left: 30% }
+  .mt-mid { top: 16px; display: none; }
+  .mt-btm { top: 16px; transform: rotate(-45deg); width: 70%; left: 30%}
+}
+
+nav.showing-items {
+    .the-menu {
+     @for $i from 1 through 10 {
+        li {
+        opacity: 1;
+        transform: translate(-0px, -0px);
+        &:nth-of-type(#{$i}) {
+          transition-delay: 80ms * $i;
+        }
+      }
+    }
+  }
+}
+
+
+.the-menu {
+  padding-bottom: 1em;
+  li { 
+    margin-bottom: 1em; 
+    font-size: 1.3em;
+    opacity: 0;
+    transform: translate(-5px, -15px);
+    transition: transform 800ms, opacity 600ms ease;
+
+    &:last-of-type {
+      margin-bottom: 0em;
+    }
+
+  }
+  a { 
+    color: white; 
+    transition: color 400ms ease;
+    &:hover { color: $primaryColor; }
+  }
+}
+
+@media(min-width: $md) {
+  .nav-parent {
+    display: inline-block !important;
+
+  }
+  .is-top--section {
+    padding: 0em 0em;
+  }
+  .mt-trigger {
+    display: none;
+  }
+  .is-nav {
+    float: right;
+  }
+  .the-menu {
+    padding-bottom: 0em;
+    li { 
+      margin-bottom: 0em; 
+      margin-left: 1em;
+      display: inline-block;
+      opacity: 1 !important;
+      transform: translate(0px, 0px) !important;
+    }
+  }
+  .nav--section {
+    display: inline-block;
+    padding: 1.5em 0em;
+  }
+}

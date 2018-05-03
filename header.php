@@ -13,6 +13,11 @@
 
 
 <nav>
+  <div class="is-y">
+    <div class="inner">
+      SIGN UP TODAY!
+    </div>
+  </div>
   <div class="inner">
     <div class="nav--section is-top--section">
       <div class="site--name">
@@ -26,14 +31,16 @@
         <span class="mt-btm"></span>
       </button>
     </div>
-    <div class="nav--section">
-      <ul class="the-menu">
-        <li><a href="">Home</a></li>
-        <li><a href="">Services</a></li>
-        <li><a href="">FAQ</a></li>
-        <li><a href="">Photo Album</a></li>
-        <li><a href="">Contact Today</a></li>
-      </ul>
+    <div class="nav--section is-nav">
+      <div class="nav-parent">
+        <ul class="the-menu">
+          <li><a href="">Home</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="">FAQ</a></li>
+          <li><a href="">Photo Album</a></li>
+          <li><a href="">Contact Today</a></li>
+        </ul>
+      </div>
     </div>
   </div>
 
