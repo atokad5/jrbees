@@ -5,6 +5,8 @@ export default function() {
     let menuTrigger = $('.mt-trigger');
     let menuIsShowing = false;
     let navParent = $('.nav-parent');
+    let closeEmailBar = $('.email-bar--close');
+    let emailBar = $('.is-y')
 
     const initMenu = () => {
       console.log('working')
@@ -22,7 +24,9 @@ export default function() {
       }
     }
 
+    const hideEmailBar = () =>  emailBar.hide();
 
+    closeEmailBar.on('click', hideEmailBar)
     menuTrigger.on('click', initMenu)
 
 

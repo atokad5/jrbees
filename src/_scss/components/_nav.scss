@@ -68,7 +68,7 @@ nav.showing-items {
   padding-bottom: 1em;
   li { 
     margin-bottom: 1em; 
-    font-size: 1.3em;
+    font-size: 1.2em;
     opacity: 0;
     transform: translate(-5px, -15px);
     transition: transform 800ms, opacity 600ms ease;
@@ -112,5 +112,79 @@ nav.showing-items {
   .nav--section {
     display: inline-block;
     padding: 1.5em 0em;
+  }
+}
+
+
+.is-y {
+  background: $primaryColor;
+  padding: 0.6em 0em;
+  position: relative;
+  color: #444;
+  text-align: center;
+  text-transform: uppercase;
+  transition: transform 200ms ease;
+
+  svg {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    stroke: #999999;
+    cursor: pointer;
+    backface-visibility: hidden;
+    transition: stroke 700ms ease;
+    &:hover {stroke: #000;}
+  }
+  &.is--gone {
+    transform: translateY(-100%);
+  }
+}
+.email-container {
+  max-width: 200px;
+  width: 100%;
+  display: inline-block;
+  margin-right: 1em;
+}
+
+.signup input[type="email"] {
+  width: auto;
+  height: 30px;
+  width: 100%;
+  background: transparent;
+  color: #444444;
+  padding-left: 0.5em;
+  border-radius: 0px !important;
+  font-weight: bolder;
+  border-bottom: 1px solid #444;
+
+  &::placeholder {
+    padding-left: 0em;
+    color: #999999;
+    font-weight: bolder;
+  }
+}
+.signup input[type="submit"] {
+  width: auto;
+  font-weight: bolder;
+  cursor: pointer;
+}
+.navbar-form {
+  // padding-left: 1em;
+
+  label { 
+    margin-right: 1em;
+    display: block;
+    font-weight: bolder;
+  }
+}
+
+
+@media(min-width: $md) {
+  .navbar-form {
+    padding-left: 1em;
+    label {
+      display: inline-block;
+    }
   }
 }
