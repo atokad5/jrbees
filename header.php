@@ -12,6 +12,8 @@
 </head>
 <body <?php body_class(); ?>>
 
+<?php $home = is_page_template('templates/home.php'); ?>
+
 
 <nav>
   <div class="is-y">
@@ -44,7 +46,7 @@
     <div class="nav--section is-nav">
       <div class="nav-parent">
         <ul class="the-menu">
-          <li><a href="">Home</a></li>
+          <li><a href="" class="<?php if($home) { echo "active"; } ?>">Home</a></li>
           <li><a href="">Services</a></li>
           <li><a href="">FAQ</a></li>
           <li><a href="">Photo Album</a></li>
@@ -55,3 +57,5 @@
   </div>
 
 </nav>
+
+

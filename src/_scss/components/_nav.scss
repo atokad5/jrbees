@@ -81,11 +81,19 @@ nav.showing-items {
   a { 
     color: white; 
     transition: color 400ms ease;
+    position: relative;
     &:hover { color: $primaryColor; }
+    &.active {color: $primaryColor; }
+    &:active {top: 1px;}
   }
 }
 
 @media(min-width: $md) {
+
+.menu-is-showing {
+  nav {background: transparent;}
+  .site--name { color: white; }
+}
   .nav-parent {
     display: inline-block !important;
 
@@ -103,7 +111,7 @@ nav.showing-items {
     padding-bottom: 0em;
     li { 
       margin-bottom: 0em; 
-      margin-left: 1em;
+      margin-left: 1.5em;
       display: inline-block;
       opacity: 1 !important;
       transform: translate(0px, 0px) !important;
