@@ -4,15 +4,17 @@ export default function() {
 
 
     let snagBgImages = () => {
-      
+
       bgImage.each( (i, img) => {
         let $t = $(img);
         let bgSrc = $t.attr('data-bg-src');
-        console.log($t)
-        $t.css({
-          'background-image': 'url(' + bgSrc + ')' 
+        let imger = new Image();
+
+        $('<img>').attr('src', bgSrc).on('load', () => {
+          $t.addClass('ready').css({'background-image': 'url('+ bgSrc  + ')'})
         })
 
+       
       })
     }
 

@@ -27,6 +27,7 @@
     </div>
   </div>
   <div class="is-hero--bg is-bg" data-bg-src="<?php echo "$root/dist/images/home-hero.jpg"; ?>"></div>
+  
 </header>
 
 
