@@ -21,8 +21,8 @@
   <div class="bottom-items--hdr">
     <div class="inner-bottom">
       <div class="inner">
-        <div class="save"><a href="">Save Today <span></span></a></div>
-        <div class="est">EST 2016 <span></span></div>
+        <div class="save is-fade"><a href="">Save Today <span></span></a></div>
+        <div class="est is-fade">EST 2016 <span></span></div>
       </div>
     </div>
   </div>

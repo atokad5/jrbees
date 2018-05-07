@@ -10,7 +10,7 @@ export default function() {
         let bgSrc = $t.attr('data-bg-src');
         let imger = new Image();
 
-        $('<img>').attr('src', bgSrc).on('load', () => {
+        $(imger).attr('src', bgSrc).on('load', () => {
           $t.addClass('ready').css({'background-image': 'url('+ bgSrc  + ')'})
         })
 

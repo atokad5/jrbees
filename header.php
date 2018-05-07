@@ -30,29 +30,33 @@
       <svg class="email-bar--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
     </div>
   </div>
-  <div class="inner">
-    <div class="nav--section is-top--section">
-      <div class="site--name">
-        <h1>JR BEES REMOVAL</h1>
+  <div class="main-nav">
+    <div class="inner">
+      
+      <div class="nav--section is-top--section">
+        <div class="site--name">
+          <h1>JR BEES</h1>
+        </div>
+
+        <button class="mt-trigger">
+          <span class="sr-only">Menu</span>
+          <span class="mt-top"></span>
+          <span class="mt-mid"></span>
+          <span class="mt-btm"></span>
+        </button>
+      </div>
+      <div class="nav--section is-nav">
+        <div class="nav-parent">
+          <ul class="the-menu">
+            <li><a href="" class="<?php if($home) { echo "active"; } ?>">Home</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">FAQ</a></li>
+            <li><a href="">Photo Album</a></li>
+            <li><a href="">Contact Today</a></li>
+          </ul>
+        </div>
       </div>
 
-      <button class="mt-trigger">
-        <span class="sr-only">Menu</span>
-        <span class="mt-top"></span>
-        <span class="mt-mid"></span>
-        <span class="mt-btm"></span>
-      </button>
-    </div>
-    <div class="nav--section is-nav">
-      <div class="nav-parent">
-        <ul class="the-menu">
-          <li><a href="" class="<?php if($home) { echo "active"; } ?>">Home</a></li>
-          <li><a href="">Services</a></li>
-          <li><a href="">FAQ</a></li>
-          <li><a href="">Photo Album</a></li>
-          <li><a href="">Contact Today</a></li>
-        </ul>
-      </div>
     </div>
   </div>
 

@@ -9,9 +9,7 @@ export default function() {
     let emailBar = $('.is-y')
 
     const initMenu = () => {
-      console.log('working')
       if(!menuIsShowing) {
-        
         body.addClass('menu-is-showing');
         navParent.slideDown(100);
         nav.addClass('showing-items');

@@ -81,6 +81,9 @@ header.is-home {
 .spacer {
   opacity: 0;
 }
+.inner-container--hdr {
+  position: relative;
+}
 .est {
   position: absolute;
   right: 0; bottom: 20px;
@@ -91,6 +94,7 @@ header.is-home {
     height: 1px; width: 100%;
     background: white;
     position: absolute;
+    left: 0;
     top: 50%; transform: translateY(-50%);
   }
 }

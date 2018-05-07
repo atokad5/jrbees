@@ -8,13 +8,14 @@
   text-transform: uppercase;
   position: relative;
   backface-visibility: hidden;
-  transition: color 200ms ease;
+  transition: color 200ms, background-color 200ms ease;
 
   &:active {
     top: 1px;
   }
   &:hover {
     color: $primaryColor;
+    background-color: #444;
 
     .sleeve-link {
       width: 100%;
@@ -28,11 +29,4 @@
 }
 
 
-.sleeve-link {
-  position: absolute;
-  top: 0; right: 0;
-  width: 0%;
-  height: 100%;
-  background: #444;
-  transition: width 200ms ease;
-}
+

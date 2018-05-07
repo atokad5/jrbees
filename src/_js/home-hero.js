@@ -2,14 +2,16 @@ export default function() {
   ;(function($) {
     let nav = $('nav');
     let saveEl = $('.save');
+    let navHeightSm = $('.is-y');
     let heroContent = $('.inner-content--hdr');
+    let innerHeroContainer = $('.inner-container--hdr');
     let homeHero = $('.is-home, .has-height');
     let saveElHeight =  saveEl.outerWidth();
     let heroHeight = heroContent.outerHeight();
     let spacer = $('.spacer');
     
     
-
+  
 
     let debounce = (func, wait, immediate) => {
       var timeout;
@@ -32,9 +34,8 @@ export default function() {
      saveElHeight =  saveEl.outerWidth();
      heroHeight = heroContent.outerHeight();
      homeHero.css({'min-height': 120 + saveElHeight + heroHeight +'px'})
-     spacer.css({
-       height: nav.outerHeight()
-     });
+     
+    
     }
 
     let updateHeight = debounce( () => {
@@ -43,7 +44,5 @@ export default function() {
     
     $(window).on('resize', updateHeight);
     setHeroHeight();
-
-    console.log(saveEl.outerWidth())
   })(jQuery);
 }
