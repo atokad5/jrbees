@@ -1,0 +1,55 @@
+.is-centered {
+  text-align: center;
+}
+.is-parent-el--padding  {
+  padding: 8em 0em;
+}
+.hdr--group {
+  max-width: 880px;
+  margin: auto;
+  color: #2C2D3C;
+
+  h1 {
+    font-size: 4em;
+    font-weight: bolder;
+    line-height: 1;
+  }
+  h4 {
+    font-size: 1.6em;
+    font-weight: bolder;
+    line-height: 1;
+    padding-top: 0.3em;
+    color: #DBDBDB;
+  }
+  p {
+    color: #8E8E8E;
+    font-size: 1.3em;
+    margin-bottom: 0em;
+  }
+}
+
+.is-black {
+  background: #000000;
+  color: white;
+}
+
+.has-lazy-image {
+  position: relative;
+  width: auto;
+  height: 0px;
+  padding-bottom: (1652 / 2048) * 100%;
+
+  img {
+    @include fill();
+  }
+}
+
+@media(min-width: $md) {
+  .grid-of-two {
+    display: flex;
+    align-items: center;
+  }
+  .has-two-column {
+    width: 50%;
+  }
+}

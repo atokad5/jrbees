@@ -46,10 +46,13 @@ export default function() {
 
 
     let navCheck = () => {
-      if(pageScroll >= grabBarHeight) {
-        nav.css({position: 'fixed'})
+      if(pageScroll > grabBarHeight) {
+        nav.css({
+          position: 'fixed',
+          'background-color': '#000000'
+        })
       } else {
-        nav.css({position: ''})
+        nav.css({position: '', 'background-color': ''})
       }
     }
 

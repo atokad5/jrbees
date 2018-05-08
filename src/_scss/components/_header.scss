@@ -1,7 +1,5 @@
 $vhHeight: 95vh;
-body {
-  height: 6000px;
-}
+
 header.is-home {
   background: #eee;
   position: relative;
@@ -66,12 +64,11 @@ header.is-home {
   transform-origin: left top 0;
   top: -150px; text-transform: uppercase;
   
-  a {color: white;}
-
+  a {color: $primaryColor;}
   span {
     height: 2px; 
     width: 40px;
-    background: white;
+    background: $primaryColor;
     position: absolute;
     top: 50%; left: 120%;
     transform: translateY(-50%);

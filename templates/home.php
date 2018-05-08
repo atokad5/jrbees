@@ -33,8 +33,27 @@
 
 <main>
   <section class="is-parent-el--padding is-centered">
-    <h1>This is a Title</h1>
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem nostrum minima ipsum aspernatur perspiciatis tenetur velit sapiente? Consequuntur ratione omnis eaque error placeat veritatis odio libero? Accusamus, sed repudiandae.</p>
+    <div class="inner">
+      <div class="hdr--group">
+        <h1>This is a Title</h1>
+        <h4>This is a Subheader</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur quis aperiam laudantium illum quo ab distinctio quidem aspernatur repellat exercitationem?</p>
+      </div>
+    </div>
   </section>
+
+  <section class="two-column-grid">
+    <div class="inner">
+      <div class="grid-of-two is-black">
+        <div class="has-two-column has-image">
+          <figure class="has-lazy-image">
+            <img class="lazy-image" src="<?php echo "$root/dist/images/imageone.jpg" ; ?>" alt="">
+          </figure>
+        </div>
+        <div class="has-two-column has-content">Content</div>
+      </div>
+    </div>
+  </section>
+
 </main>
 <?php get_footer(); ?>
