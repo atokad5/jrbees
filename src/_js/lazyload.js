@@ -1,6 +1,7 @@
 export default function() {
   ;(function() {
     let bgImage = $('.is-bg');
+    let lazyImg = $('.lazy-image');
 
 
     let snagBgImages = () => {
@@ -18,7 +19,24 @@ export default function() {
       })
     }
 
+    let injectSrc = () => {
+      lazyImg.each((i, img) => {
+        console.log(img)
+        let $t = $(img);
+        let srcVal = $t.attr('data-lazy')
+        $t.attr('src', srcVal)
 
-    $(window).on('load', snagBgImages)
+        $t.on('load', () => $t.parent().addClass('is-loaded'))
+      })
+
+    }
+
+    
+
+
+    $(window).on('load', () => {
+      snagBgImages(); 
+      injectSrc();
+    })
   })(jQuery);
 }

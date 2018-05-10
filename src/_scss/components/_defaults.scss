@@ -38,18 +38,37 @@
   width: auto;
   height: 0px;
   padding-bottom: (1652 / 2048) * 100%;
+  opacity: 0;
+  transition: opacity 500ms ease;
+
+  &.is-loaded {
+    opacity: 1;
+  }
 
   img {
     @include fill();
   }
 }
 
+.has-content--inner {
+  padding: 3em 3em;
+  h2 { font-size: 2.3em; }
+}
+
 @media(min-width: $md) {
   .grid-of-two {
     display: flex;
     align-items: center;
+
+    &.is-reversed {
+      flex-direction: row-reverse;
+    }
   }
   .has-two-column {
     width: 50%;
   }
+  .has-content--inner {
+    padding: 4em;
+  }
+  
 }
