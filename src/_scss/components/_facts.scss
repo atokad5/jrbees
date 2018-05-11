@@ -1,12 +1,16 @@
 .facts {
-  .inner { width: 100%; &:after {
-    content: '';
-    @include clearfix();
-  } }
+  .inner { 
+    width: 100%;
+    &:after {
+      content: '';
+      @include clearfix();
+    } 
+  }
 }
 .two-col--facts {
   margin-bottom: 3em;
   padding: 3em 0em 2em 0em;
+  
 
   &:last-of-type { margin-bottom: 0em; }
 
@@ -22,6 +26,7 @@
 
 .is-section--content {
   padding: 2em 2.5%;
+  
 
   h2 {
     font-size: 2em;
@@ -71,3 +76,4 @@
     }
   }
 }
+

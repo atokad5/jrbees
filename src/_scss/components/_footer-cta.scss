@@ -1,0 +1,161 @@
+.is-cta-el {
+  background: black;
+  color: white;
+  position: relative;
+}
+
+.is-cta--liner {
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  padding: 4em 0em;
+  position: relative;
+  z-index: 4;
+
+  h1 {
+    font-size: 2.4em;
+    margin-top: 0em;
+  }
+  h4 {
+    font-size: 1.3em;
+    color: #999;
+  }
+}
+
+.form-cta {
+  max-width: 400px;
+  margin: auto; 
+  padding-top: 3em;
+  input {
+    width: calc(100% - 0.2em);
+    color: white;
+    padding-left: 0.2em;
+    margin: 0;
+    border-radius: 0px;
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+    border-bottom: 2px solid $primaryColor;
+    &::placeholder { color: grey; }
+
+    &:active, &:focus {
+      border-bottom: 2px solid white;
+      &::placeholder { color: white; }
+    }
+  }
+
+
+}
+.input {
+  position: relative;
+  max-width: 400px;
+}
+
+.arrow-btn {
+  display: inline-block;
+  width: 30px;
+  position: absolute;
+  top: 50%;
+  cursor: pointer;
+  right: 0;
+  transform: translateY(-50%);
+
+  svg {
+    width: 70%;
+  }
+}
+
+
+
+
+
+
+
+
+//main footer
+
+footer {
+  background: #222;
+}
+
+.footer .inner {
+  padding: 4em 0em;
+  color: white;
+}
+
+.save-today {
+  background: $primaryColor;
+  padding: 1.2em 0em;
+
+  a {
+    color: #444;
+    font-weight: bolder;
+    text-transform: uppercase;
+    transition: color 150ms ease;
+
+    &:hover {
+      color: #222;
+    }
+  }
+}
+.outer-logo-container {
+  max-width: 100px;
+}
+
+.footer-logo {
+  position: relative;
+  width: auto;
+  height: 0px;
+  padding-bottom: (666 / 588) * 100%;
+
+  img {
+    @include overlay();
+  }
+}
+
+footer ul {
+  list-style-type: none;
+  li {
+    margin-bottom: 0.4em;
+    &:last-of-type {
+      margin-bottom: 0em;
+    }
+  }
+  a {
+    color: white;
+    transition: color 150ms ease;
+    &:hover { color: $primaryColor; }
+  }
+}
+
+.foot-el {
+  padding-bottom: 3em;
+}
+
+@media(min-width: $md) {
+  .two-cta--section {
+    display: flex;
+  }
+  .is-cta-el {
+    width: 50%;
+  }
+  .is-cta--liner {
+    padding: 6em 0em;
+  }
+  .three-col--footer {
+    display: flex;
+    align-items: center;
+  }
+  .outer-logo-container {
+    margin: auto;
+  }
+  .foot-el {
+    width: 33%;
+    &:nth-of-type(2) {
+      text-align: center;
+    }
+    &:nth-of-type(3) {
+      text-align: right;
+    }
+  }
+  
+}
