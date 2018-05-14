@@ -32,14 +32,16 @@ export default function() {
 
 
     let setHeroHeight = () => {
-     homeHero.css({'min-height': '0px'})
-     saveElHeight =  saveEl.outerWidth();
-     heroHeight = heroContent.outerHeight();
-     if(spacer.length > 0) { spacerHeight = spacer.height(nav.outerHeight()) }
-     homeHero.css({'min-height': 120 + saveElHeight + heroHeight +'px'})
-     defaultHdr.css({
-      'padding-top': spacerHeight
-     })
+      homeHero.css({'min-height': '0px'})
+      saveElHeight =  saveEl.outerWidth();
+      heroHeight = heroContent.outerHeight();
+      if(spacer.length > 0) { 
+        spacerHeight = spacer.height(nav.outerHeight()) 
+      }
+      homeHero.css({'min-height': 120 + saveElHeight + heroHeight +'px'})
+      defaultHdr.css({
+       'padding-top': spacerHeight
+      })
     
     }
 
