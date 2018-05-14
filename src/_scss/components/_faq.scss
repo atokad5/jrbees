@@ -1,0 +1,15 @@
+.faq-item {
+	border-bottom: 1px solid #ddd;
+	color: #444;
+	&--inner { padding: 2em 0em; }
+	&:hover {
+		color: #000;
+	}
+}
+
+.faq-item--inner {
+	h1 {cursor: pointer;}
+	p {
+		display: none;
+	}
+}

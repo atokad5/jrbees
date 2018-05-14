@@ -38,7 +38,14 @@
 	<section class="content--group is-parent-el--padding no-padding-btm">
 		<div class="inner">
 			<div class="content--area">
-					faq
+					<?php for($i = 0; $i < 6; $i++) { ?>
+						<div class="faq-item">
+							<div class="faq-item--inner">
+								<h1 class="faq-title">This is a title for a question</h1>
+								<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur ex accusamus excepturi et eligendi ea labore enim magni aperiam. Quia cumque officia accusantium distinctio ex recusandae! Minima, nulla dolore enim!</p>
+							</div>
+						</div>	
+					<?php } ?>
 			</div>
 		</div>
 	</section>
