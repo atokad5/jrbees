@@ -34,10 +34,11 @@
         </div>
         <div class="foot-el">
           <ul>
-            <li><a href="">Facebook</a></li>
-            <li><a href="">Instagram</a></li>
-            <li><a href="">Yelp</a></li>
-            <li><a href="https://www.linkedin.com/in/jesse-adcock-9735a5106/?trk=nav_responsive_tab_profile_pic">Linkedin</a></li>
+            <?php 
+              $socialLinks = get_field('social_urls', 'options');
+              foreach($socialLinks as $theLink) { ?>
+                <li><a href="<?php echo $theLink['social_link']; ?>"><?php echo $theLink['social_link_text']; ?></a></li>
+            <?php } ?>
           </ul>
         </div>
       </div>

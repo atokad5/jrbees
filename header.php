@@ -12,17 +12,23 @@
 </head>
 <body <?php body_class(); ?>>
 
-<?php $home = is_page_template('templates/home.php'); ?>
+<?php 
+  $home = is_page_template('templates/home.php'); 
+  $services = is_page_template('templates/services.php'); 
+  $faq = is_page_template('templates/faq.php'); 
+?>
 
 
-<nav>
-  <div class="is-y">
+<nav class="<?php if(!$home) echo "is-fixed" ;?>">
+  <?php if($home) { ?> 
+    <div class="is-y">
     <div class="inner">
       <div class="signup">
-        <form action="" class="navbar-form">
+        <form action="https://crosskeydesigns.us1.list-manage.com/subscribe/post?u=dd25a7dace2f20cdfbf03f522&id=b50cdbe23c" class="navbar-form mcFormsNav">
           <label for="email-bar">Get Up-to-date on Bee Related News</label>
           <span class="email-container">
-            <input id="email-bar" type="email" placeholder="Email Address">
+            <input id="email-bar" type="email" name="EMAIL" placeholder="Email Address">
+            <input type="hidden" name="" class="honeypot">
           </span>
           <input type="submit" value="Sign Up">
         </form>
@@ -30,12 +36,13 @@
       <svg class="email-bar--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
     </div>
   </div>
+  <?php } ?>
   <div class="main-nav">
     <div class="inner">
       
       <div class="nav--section is-top--section">
         <div class="site--name">
-          <h1>JR BEES</h1>
+          <h1><a href="<?php echo site_url(''); ?>">JR BEES</a></h1>
         </div>
 
         <button class="mt-trigger">
@@ -48,9 +55,10 @@
       <div class="nav--section is-nav">
         <div class="nav-parent">
           <ul class="the-menu">
-            <li><a href="" class="<?php if($home) { echo "active"; } ?>">Home</a></li>
-            <li><a href="">Services</a></li>
-            <li><a href="">FAQ</a></li>
+            <li><a href="<?php echo site_url(''); ?>" class="<?php if($home) { echo "active"; } ?>">Home</a></li>
+
+            <li><a href="<?php echo site_url('services'); ?>" class="<?php if($services) { echo "active"; } ?>">Services</a></li>
+            <li><a href="<?php echo site_url('faq'); ?>" class="<?php if($faq) { echo "active"; } ?>">FAQ</a></li>
             <li><a href="">Photo Album</a></li>
             <li><a href="">Contact Today</a></li>
           </ul>

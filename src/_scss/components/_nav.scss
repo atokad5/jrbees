@@ -4,6 +4,19 @@ nav {
   width: 100%;
   z-index: 9999;
   color: white;
+
+  &.is-fixed {
+    position: fixed;
+    background: black;
+  }
+}
+
+.menu-is-showing {
+  nav {
+    &.is-fixed {
+      background: black;
+    }
+  }
 }
 .main-nav {
   width: 100%;
@@ -88,10 +101,13 @@ nav.showing-items {
     position: relative;
     &:hover { color: $primaryColor; }
     &.active {color: $primaryColor; }
-    &:active {top: 1px; font-weight: 700;}
+    &:active {top: 1px;}
   }
+  
 }
-
+.site--name a {
+  color: white;
+}
 @media(min-width: $md) {
 
 .menu-is-showing {

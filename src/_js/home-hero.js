@@ -9,6 +9,8 @@ export default function() {
     let saveElHeight =  saveEl.outerWidth();
     let heroHeight = heroContent.outerHeight();
     let spacer = $('.spacer');
+    let spacerHeight = 0;
+    let defaultHdr = $('.standard--hdr');
     
     
   
@@ -33,8 +35,11 @@ export default function() {
      homeHero.css({'min-height': '0px'})
      saveElHeight =  saveEl.outerWidth();
      heroHeight = heroContent.outerHeight();
+     if(spacer.length > 0) { spacerHeight = spacer.height(nav.outerHeight()) }
      homeHero.css({'min-height': 120 + saveElHeight + heroHeight +'px'})
-     
+     defaultHdr.css({
+      'padding-top': spacerHeight
+     })
     
     }
 

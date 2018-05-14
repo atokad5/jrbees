@@ -1,0 +1,14 @@
+.hdr--group--default {
+	padding: 8em 0em;
+	color: white;
+}
+
+.hdr--liner-default {
+	position: relative;
+	z-index: 4;
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+
+	h1 {font-weight: 700; font-size: 2.4em; line-height: 1; margin-top:0em; color: $primaryColor;}
+}
