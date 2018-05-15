@@ -7,10 +7,9 @@ export default function() {
 
 		var elem = document.querySelector('.content--area');
 		var msnry = new Masonry( elem, {
-		  // options
 		  itemSelector: '.image-container',
-		  columnWidth: 200,
-		  gutter: 30,
+		  columnWidth: '.image-container',
+		  percentPosition: true,
 		  fitWidth: true
 
 		});
