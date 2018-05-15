@@ -1,4 +1,4 @@
-<?php /* Template Name: Faq Page */ ?>
+<?php /* Template Name: Photo Album Page */ ?>
 <?php $root = get_template_directory_uri(); ?>
 <?php get_header(); ?>
 <div class="spacer"></div>
@@ -37,18 +37,17 @@
 
 	<section class="content--group is-parent-el--padding no-padding-btm">
 		<div class="inner">
-			<div class="content--area">
-					<?php 
-						$faqEl = get_field('faq');
+			<div class="content--area" style="position: relative;">
+				<?php $image = get_field('photo_gallery');
 
-						foreach($faqEl as $theContent) { ?>
-						<div class="faq-item">
-							<div class="faq-item--inner">
-								<h1 class="faq-title"><?php echo $theContent['question']; ?></h1>
-								<?php echo $theContent['answer']; ?>
+					foreach($image as $theImage) {?> 
+							<div class="image-container">
+								<figure class="galleryImg">
+									<img class="lazy-image is-gallery-image" src="" data-lazy="<?php echo $theImage['url'] ;?>" data-width="<?php echo $theImage['width']; ?>" data-height="<?php echo $theImage['height']; ?>">
+								</figure>
 							</div>
-						</div>	
-					<?php } ?>
+						<?php }
+				 ?>
 			</div>
 		</div>
 	</section>
