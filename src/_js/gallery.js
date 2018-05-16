@@ -8,7 +8,6 @@ export default function() {
 			var elem = document.querySelector('.content--area');
 			var msnry = new Masonry( elem, {
 			  itemSelector: '.image-container',
-			  // columnWidth: '.content--area',
 			  gutter: 10,
 			  percentPosition: true,
 
