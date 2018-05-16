@@ -38,9 +38,27 @@
 	<section class="content--group is-parent-el--padding no-padding-btm">
 		<div class="inner">
 			<div class="content--area">
-					<?php while ( have_posts() ) : the_post(); ?>			
+				<form action="">
+					<div class="form-input">
+						<input type="text" name="" id="name" class="theFormEl">
+						<label for="name">First & Last Name</label>
+					</div>
+					<div class="form-input">
+						<input type="email" name="" id="email" class="theFormEl">
+						<label for="email">Email Address</label>
+					</div>
+					<div class="form-input">
+						<input type="tel" name="" id="number" class="theFormEl">
+						<label for="number">Phone Number</label>
+					</div>
+					<div class="form-input">
+						<textarea name="" id="message" class="theFormEl"></textarea>
+						<label for="message">Message</label>
+					</div>
+				</form>
+					<!-- <?php while ( have_posts() ) : the_post(); ?>			
 					<?php the_content();  ?>
-					<?php endwhile;  wp_reset_postdata(); ?>
+					<?php endwhile;  wp_reset_postdata(); ?> -->
 			</div>
 		</div>
 	</section>

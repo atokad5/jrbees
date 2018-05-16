@@ -1,0 +1,41 @@
+.content--area {
+	
+}
+.form-input {
+	position: relative;
+	width: 100%;
+	margin-bottom: 2em;
+
+	input {
+		width: calc(100% - 0.3em);
+		height: 35px;
+		background: red;
+		padding-left: 0.3em;
+
+		&:focus, &:active {
+			+ label {
+				top: -45%;
+				transition: all 250ms ease;
+				font-size: 0.9em;
+			}
+		}
+		&.is-filled {
+			+ label {
+				top: -45%;
+				transition: all 250ms ease;
+				font-size: 0.9em;
+		
+			}
+		}
+	}
+
+	label {
+		position: absolute;
+		z-index: 4;
+		display: inline-block;
+		top: 50%;
+		transition: all 250ms ease;
+		left: 0.3em;
+		transform: translateY(-50%);
+	}
+}
