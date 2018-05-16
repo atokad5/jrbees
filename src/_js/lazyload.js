@@ -33,6 +33,7 @@ export default function() {
       $t.parent().css({
         'padding-bottom':  heightEl / widthEl * 100 +'%'
       })
+  
 
     })
 

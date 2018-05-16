@@ -63,8 +63,9 @@ html {
   }
 
   img {
-    @include fill();
+    @include fill(); 
   }
+
 }
 
 .has-content--inner {

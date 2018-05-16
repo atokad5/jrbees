@@ -4,16 +4,17 @@ export default function() {
 		let galleryImg = $('.image-container');
 
 
+		if($('body').hasClass('page-template-photoalbum')) {
+			var elem = document.querySelector('.content--area');
+			var msnry = new Masonry( elem, {
+			  itemSelector: '.image-container',
+			  // columnWidth: '.content--area',
+			  gutter: 10,
+			  percentPosition: true,
 
-		var elem = document.querySelector('.content--area');
-		var msnry = new Masonry( elem, {
-		  itemSelector: '.image-container',
-		  columnWidth: '.image-container',
-		  percentPosition: true,
-		  fitWidth: true
-
-		});
-
+			});
+	
+		}
 
 	})(jQuery);
 }

@@ -16,6 +16,7 @@
   $home = is_page_template('templates/home.php'); 
   $services = is_page_template('templates/services.php'); 
   $faq = is_page_template('templates/faq.php'); 
+  $album = is_page_template('templates/photoalbum.php'); 
 ?>
 
 
@@ -59,7 +60,7 @@
 
             <li><a href="<?php echo site_url('services'); ?>" class="<?php if($services) { echo "active"; } ?>">Services</a></li>
             <li><a href="<?php echo site_url('faq'); ?>" class="<?php if($faq) { echo "active"; } ?>">FAQ</a></li>
-            <li><a href="">Photo Album</a></li>
+            <li><a href="<?php echo site_url('album'); ?>" class="<?php if($album) { echo "active"; } ?>">Photo Album</a></li>
             <li><a href="">Contact Today</a></li>
           </ul>
         </div>

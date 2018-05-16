@@ -1,12 +1,14 @@
 .image-container {
-	width: 33%;
+	width: calc(50% - 10px);
 	float: left;
-	margin-bottom: 0.5em;
+	margin-bottom: 10px;
 }
 .galleryImg {
 	position: relative;
 	height: 0px;
-	width: auto;
+	opacity: 0;
+	transition: opacity 600ms ease;
+	// width: 100%;
 
 	img {
 		width: 100%;
@@ -14,5 +16,27 @@
 		position: absolute;
 		top: 0; left: 0;
 	}
+	
+	&.is-loaded {
+		opacity: 1;
+	}
+}
 
+.content--area {
+	&.has-image-container {
+		max-width: 1200px;
+	}
+}
+
+@media(min-width: $md) {
+	.image-container {
+		width: calc(33% - 10px);
+	}
+}
+
+
+@media(min-width: $lg) {
+	.image-container {
+		width: calc(25% - 10px);
+	}
 }

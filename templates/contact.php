@@ -1,4 +1,4 @@
-<?php /* Template Name: Services Page */ ?>
+<?php /* Template Name: Contact Page */ ?>
 <?php $root = get_template_directory_uri(); ?>
 <?php get_header(); ?>
 <div class="spacer"></div>
