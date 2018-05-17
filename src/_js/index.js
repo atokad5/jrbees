@@ -11,7 +11,6 @@ import accordion from './accordion.js'
 import pageTransitions from './pagetransitions.js'
 import Masonry from 'masonry-layout'
 import gallery from './gallery.js'
-import form from './form.js'
 window.Cookies = jsCookie;
 window.Masonry = Masonry;
 homeHero();
@@ -22,4 +21,3 @@ ajaxForms();
 pageTransitions();
 accordion();
 gallery();
-form();

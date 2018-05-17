@@ -37,25 +37,21 @@
 
 	<section class="content--group is-parent-el--padding no-padding-btm">
 		<div class="inner">
-			<div class="content--area">
-				<form action="">
-					<div class="form-input">
-						<input type="text" name="" id="name" class="theFormEl">
-						<label for="name">First & Last Name</label>
-					</div>
-					<div class="form-input">
-						<input type="email" name="" id="email" class="theFormEl">
-						<label for="email">Email Address</label>
-					</div>
-					<div class="form-input">
-						<input type="tel" name="" id="number" class="theFormEl">
-						<label for="number">Phone Number</label>
-					</div>
-					<div class="form-input">
-						<textarea name="" id="message" class="theFormEl"></textarea>
-						<label for="message">Message</label>
-					</div>
-				</form>
+			<div class="content--area has-form">
+				<div class="form-content">
+					<?php the_field('contact_text'); ?>
+					<?php $showSocial = get_field('show_social'); ?>
+					<?php if($showSocial) { ?>
+						<div class="social--icons">
+							<ul>
+								<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-facebook"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg></a></li>
+								<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-instagram"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.5" y2="6.5"></line></svg></a></li>
+								<li><a href=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-linkedin"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path><rect x="2" y="9" width="4" height="12"></rect><circle cx="4" cy="4" r="2"></circle></svg></a></li>
+							</ul>
+						</div>
+					<?php } ?>
+				</div>
+				<?php echo do_shortcode('[contact-form-7 id="280" title="Contact form 1"]'); ?>
 					<!-- <?php while ( have_posts() ) : the_post(); ?>			
 					<?php the_content();  ?>
 					<?php endwhile;  wp_reset_postdata(); ?> -->

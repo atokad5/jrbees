@@ -8,6 +8,7 @@ export default function() {
 		const checkForm = e => {
 			let $t = $(e.currentTarget);
 			if($t.val().length > 0) {
+				  console.log('sumtin')
 				$t.addClass('is-filled');
 			} else {
 				$t.removeClass('is-filled');
