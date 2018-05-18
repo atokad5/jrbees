@@ -39,14 +39,13 @@
 		<div class="inner">
 			<div class="content--area has-image-container" style="position: relative;">
 				<?php $image = get_field('photo_gallery');
-
 					foreach($image as $theImage) {?> 
-							<div class="image-container">
-								<figure class="galleryImg">
-									<img class="lazy-image is-gallery-image" src="" data-lazy="<?php echo $theImage['url'] ;?>" data-width="<?php echo $theImage['width']; ?>" data-height="<?php echo $theImage['height']; ?>">
-								</figure>
-							</div>
-						<?php }
+						<div class="image-container">
+							<figure class="galleryImg">
+								<img class="lazy-image is-gallery-image" src="" data-lazy="<?php echo $theImage['url'] ;?>" data-width="<?php echo $theImage['width']; ?>" data-height="<?php echo $theImage['height']; ?>">
+							</figure>
+						</div>
+					<?php }
 				 ?>
 			</div>
 		</div>
