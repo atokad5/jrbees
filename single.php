@@ -21,15 +21,23 @@
 
 
 	<section class="is-parent-el--padding no-padding-btm">
-	<div class="inner content--area">
+	<div class="inner content--area--large is-left">
+			<div class="column-blog column-large">
 		<?php if(have_posts()) : while(have_posts()) : the_post(); ?>
 
 		<?php the_content(); ?>
 	<?php endwhile; endif; wp_reset_postdata(); ?>
 
-	<div class="back-btn">
-		<a href="<?php echo site_url('blog'); ?>" class="cta">View All Blogs</a>
-	</div>
+		<div class="back-btn">
+			<a href="<?php echo site_url('blog'); ?>" class="cta">View All Blogs</a>
+		</div>
+		</div>
+
+		<div class="column-blog column-small">
+			sidebar
+		</div>
+
+		
 	</div>
 
 	

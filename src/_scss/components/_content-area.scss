@@ -9,6 +9,7 @@
 
 	img {
 		max-width: 100%;
+		height: auto;
 	}
 	img.alignright {float:right; margin:0 0 1em 1em;}
 	img.alignleft {float:left; margin:0 1em 1em 0;}
@@ -16,4 +17,45 @@
 	a img.alignright {float:right; margin:0 0 1em 1em;}
 	a img.alignleft {float:left; margin:0 1em 1em 0;}
 	a img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+
+	&.is-left {
+
+	}
+}
+
+.content--area--large {
+	&:after {
+		content: '';
+		@include clearfix();
+	}
+
+	img {
+		max-width: 100%;
+		height: auto;
+	}
+	img.alignright {float:right; margin:0 0 1em 1em;}
+	img.alignleft {float:left; margin:0 1em 1em 0;}
+	img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+	a img.alignright {float:right; margin:0 0 1em 1em;}
+	a img.alignleft {float:left; margin:0 1em 1em 0;}
+	a img.aligncenter {display: block; margin-left: auto; margin-right: auto;}
+}
+
+.column-blog {
+	position: relative;
+	&:after {
+		content: '';
+		@include clearfix();
+	}
+}
+
+.column-blog {
+	float: left;
+
+	&.column-large {
+		width: 75%;
+	}
+	&.column-small {
+		width: 25%;
+	}
 }
