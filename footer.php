@@ -3,7 +3,14 @@
 <?php get_template_part('partials/pre-footer'); ?>
 </main>
 
-
+<?php 
+  $home = is_page_template('templates/home.php'); 
+  $services = is_page_template('templates/services.php'); 
+  $faq = is_page_template('templates/faq.php'); 
+  $album = is_page_template('templates/photoalbum.php'); 
+  $contact = is_page_template('templates/contact.php'); 
+  $blog = is_page_template('templates/blog.php'); 
+?>
 
 <footer>
   <div class="save-today">
@@ -16,7 +23,7 @@
     <div class="inner">
       <div class="three-col--footer">
         <div class="foot-el">
-          <ul>
+          <ul class="footer_links">
             <li><a href="">Home</a></li>
             <li><a href="">Photo Album</a></li>
             <li><a href="">Faq</a></li>

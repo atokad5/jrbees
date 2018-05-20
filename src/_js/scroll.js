@@ -11,10 +11,15 @@ export default function() {
     let grabBarHeight = subScribeBar.outerHeight();
     let contactNav = $('.contact-nav');
     let isDupl = $('.is-fixed-nav--el');
-    let defaultHdr = $('.standard--hdr')
+    let defaultHdr = $('.standard--hdr');
+    let shareBarParent = $('.social-bar')
+    let shareBar = $('.is-social-bar')
     let hdrHeight = null;
 
-    hdrHeight = defaultHdr.outerHeight();
+    let copyShareBar = shareBar.clone().addClass('sticky-share');
+
+    shareBarParent.append(copyShareBar);
+
 
 
     let updateScroll = () => {
@@ -91,6 +96,20 @@ export default function() {
               'top': ''
             })
           }
+       }
+
+       if(shareBar.length > 0 && defaultHdr.length > 0 ) {
+        if(pageScroll >= hdrHeight) {
+          $('.sticky-share').css({
+            'position': 'fixed',
+            'top': naver.outerHeight()
+          })
+        } else {
+          $('.sticky-share').css({
+            'position': '',
+            'top': ''
+          })
+        }
        }
  
         didScroll = false;

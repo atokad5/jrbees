@@ -15,7 +15,6 @@
 <main>
 <section class="is-parent-el--padding no-padding-btm">
 	<div class="inner content-area">
-
 		<?php 
 		$getPost = new WP_Query(array( 
 			'post_type' => 'post'
@@ -25,13 +24,11 @@
 			$image = get_field('featured_header');
 		?>
 		<div class="blog-content">
-			 <a href="<?php the_permalink(); ?>"><figure class="galleryImg">
-				<img class="lazy-image is-gallery-image" src="" data-lazy="<?php echo $image['url'] ;?>" data-width="<?php echo $image['width'];  ?>" data-height="<?php echo $image['height']; ?>">
-			</figure></a>
-	<!-- 		<figure>
-				<?php echo $image['width']; ?>
-				<img src="<?php echo $image['url'];?>" alt="">
-			</figure> -->
+			<a href="<?php the_permalink(); ?>">
+			 	<figure class="galleryImg">
+					<img class="lazy-image is-gallery-image" src="" data-lazy="<?php echo $image['url'] ;?>" data-width="<?php echo $image['width'];  ?>" data-height="<?php echo $image['height']; ?>">
+				</figure>
+			</a>
 			<h1 class="blog-title"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h1>
 			<small>posted on: <?php the_date('F y Y') ?></small>
 			<div class="summary"><?php the_excerpt(''); ?></div>

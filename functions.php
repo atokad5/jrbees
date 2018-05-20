@@ -13,7 +13,7 @@ if( function_exists('acf_add_options_page') ) {
 
 
 function wpdocs_excerpt_more( $more ) {
-   return ' <a href="'.get_the_permalink().'" class="read-more--btn"> Read More...</a>';
+   return ' <br><a href="'.get_the_permalink().'" class="cta"> Read More...</a>';
 }
 add_filter( 'excerpt_more', 'wpdocs_excerpt_more' );
 ?>

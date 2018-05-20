@@ -109,6 +109,11 @@ nav.showing-items {
   }
   
 }
+.footer_links {
+  a {
+    &.active  {color: $primaryColor; }
+  }
+}
 .site--name a {
   color: white;
 }
