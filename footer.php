@@ -1,6 +1,10 @@
 <?php $root = get_template_directory_uri(); ?>
 
+
+
+
 <?php get_template_part('partials/pre-footer'); ?>
+
 </main>
 
 <?php 

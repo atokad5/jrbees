@@ -12,6 +12,7 @@ import pageTransitions from './pagetransitions.js'
 import Masonry from 'masonry-layout'
 import gallery from './gallery.js'
 import equal from './equal.js'
+import util from './util.js'
 window.Cookies = jsCookie;
 window.Masonry = Masonry;
 homeHero();
@@ -23,3 +24,4 @@ pageTransitions();
 accordion();
 equal();
 gallery();
+util();

@@ -9,7 +9,7 @@ export default function() {
 			var msnry = new Masonry( elem, {
 			  itemSelector: '.image-container',
 			  gutter: 10,
-			  percentPosition: true,
+			  percentPosition: true
 
 			});
 	

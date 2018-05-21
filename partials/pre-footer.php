@@ -3,6 +3,24 @@
 
 <section class="is-parent-el--padding">
   <div class="inner">
+  
+    <?php $featuredBlog = get_field('featured_blog_one', 'options'); ?>
+    <?php $featuredImg  = get_field('featured_header', $featuredBlog->ID ); ?>
+    <?php $featuredUrl  = get_permalink($featuredBlog->ID); ?>
+
+    <div class="featured-article">
+      <div class="featured-article--inner">
+        <h1><?php echo $featuredBlog->post_title; ?></h1>
+        <div class="featured-article-excerpt">
+          <?php echo $featuredBlog->post_content; ?>
+        </div>
+        <a href="<?php echo $featuredUrl; ?>" class="cta">Read Story</a>
+      </div>
+      <div class="is-hero--bg is-bg" data-bg-src="<?php echo $featuredImg['url']; ?>"></div>
+    </div>
+
+
+
     <div class="two-cta--section">
 
       <div class="is-cta-el">
@@ -44,5 +62,7 @@
       </div>
     
     </div>
+    
+
   </div>
 </section>

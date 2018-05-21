@@ -71,6 +71,25 @@ article {
 		width: 100%;
 	}
 }
+
+.featured-section--blog {
+	padding-bottom: 6em;
+	&:after {
+		content: '';
+		@include clearfix();
+	}
+	h1 {
+		font-size: 2.4em;
+		text-align: center;
+		margin-bottom: 1em;
+	}
+}
+.blog-featured {
+	color: white;
+	position: relative;
+	max-width: 600px;
+	margin: 0 auto 2em auto;
+}
 @media(min-width: $md) {
 	.column-blog {
 		float: left;
@@ -78,10 +97,20 @@ article {
 		&.column-large {
 			width: 62%;
 			margin-bottom: 0;
-			margin-right: 3%;
+			margin-right: 2%;
 		}
 		&.column-small {
 			width: 35%;
+		}
+	}
+	.blog-featured {
+		color: white;
+		width: 48%; 
+		max-width: 100%;
+		float: left;
+		margin-right: 4%;
+		&:last-of-type {
+			margin-right: 0em;
 		}
 	}
 }
