@@ -17,22 +17,22 @@
 ?>
 
 <footer>
+  <?php $showLink = get_field('show_featured_link', 'options'); ?>
+  <?php if($showLink) { ?>
   <div class="save-today">
     <div class="inner is-centered">
-      <a href="">SAVE 20% TODAY FOR ALL BEE SERVICES  </a>
+      <a href="<?php the_field('home_page_mini_link', 'options'); ?>"> <?php the_field('home_page_mini_link_text' , 'options'); ?>  </a>
     </div>
   </div>
+  <?php } ?>
+
 
   <div class="footer">
     <div class="inner">
       <div class="three-col--footer">
         <div class="foot-el">
           <ul class="footer_links">
-            <li><a href="">Home</a></li>
-            <li><a href="">Photo Album</a></li>
-            <li><a href="">Faq</a></li>
-            <li><a href="">Blog</a></li>
-            <li><a href="">Contact</a></li>
+           <!-- Javascript injects header nav links here -->
           </ul>
         </div>
         <div class="foot-el">

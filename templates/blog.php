@@ -31,7 +31,6 @@
 			<div class="blog-featured">
 				 <div class="featured-article--inner">
 		        <h1><?php echo $featuredBlog->post_title; ?></h1>
-		        
 		        <a href="<?php echo $featuredUrl; ?>" class="cta">Read Story</a>
 		      </div>
 		      <div class="is-hero--bg is-bg" data-bg-src="<?php echo $featuredImg['url']; ?>"></div>

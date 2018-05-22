@@ -1,11 +1,12 @@
-$vhHeight: 95vh;
+$vhHeight: 100vh;
 
 header.is-home {
-  background: #eee;
+  background: black;
   position: relative;
   top: 0;
   height: $vhHeight;
   width: 100%;
+
   
 
   .inner.has-height {
@@ -20,14 +21,21 @@ header.is-home {
   @include overlay();
   background-size: cover;
   background-position: center;
+  background-color: black;
   opacity: 0.5;
   transition: opacity 1000ms ease;
 
-  &.ready { opacity: 1; }
+  &.ready { 
+    opacity: 1; 
+    &:after {
+      content: '';
+      @include fill(rgba(#000, 0.8));
+    }
+  }
 
   &:after {
     content: '';
-    @include fill(rgba(#000, 0.8));
+    @include fill(rgba(#000, 1));
   }
 }
 .inner-content--hdr,  {
