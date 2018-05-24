@@ -6,7 +6,9 @@ export default function() {
 		let mcForms = $('.mcForms');
 		let mcFormsNav = $('.mcFormsNav');
 		let input = $('.input');
+		let inputTwo = $('.inputTwo');
 		let msg = $('.msg');
+		let msgTwo = $('.msgTwo')
 		let honeypot = $('.honeypot');
 		let navEl = $('.is-y');
 		let closeBar = $('.email-bar--close')
@@ -59,9 +61,10 @@ export default function() {
 					dataType: 'jsonp',
 					data: $t.serialize(),
 					success: function(data) {
+	
 						if(data.result === "success") {
-							input.hide();
-							msg.html(data.msg)
+							inputTwo.hide();
+							msgTwo.html(data.msg)
 							Cookies.set('formInput', 'formFilled', { expires: 365 });
 						}
 					}

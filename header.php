@@ -27,7 +27,7 @@
     <div class="is-y">
     <div class="inner">
       <div class="signup">
-        <form action="https://JRBees.us18.list-manage.com/subscribe/post?u=ff7dd6267f87b5edda4f367c4&id=431a0702bc" class="navbar-form mcFormsNav">
+        <form action="https://JRBees.us18.list-manage.com/subscribe/post?u=ff7dd6267f87b5edda4f367c4&id=431a0702bc" class="navbar-form mcFormsNav inputTwo">
           <label for="email-bar">Get Up-to-date on Bee Related News</label>
           <span class="email-container">
             <input id="email-bar" type="email" name="EMAIL" placeholder="Email Address">
@@ -35,6 +35,7 @@
           </span>
           <input type="submit" value="Sign Up">
         </form>
+        <div class="msgTwo"></div>
       </div>
       <svg class="email-bar--close" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-x-circle"><circle cx="12" cy="12" r="10"></circle><line x1="15" y1="9" x2="9" y2="15"></line><line x1="9" y1="9" x2="15" y2="15"></line></svg>
     </div>

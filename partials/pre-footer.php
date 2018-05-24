@@ -37,7 +37,7 @@
           <?php the_field('box_two_content', 'options') ?>
           <div class="form-cta">
             <form class="mcForms" action="https://JRBees.us18.list-manage.com/subscribe/post?u=ff7dd6267f87b5edda4f367c4&id=431a0702bc">
-              <div class="input">
+              <div class="inputTwo">
                 <input type="email" name="EMAIL" placeholder="email@gmail.com">
                 <input type="hidden" name="" class="honeypot">
                 <button class="arrow-btn" type="submit">
