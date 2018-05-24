@@ -36,7 +36,7 @@
         <div class="is-cta--liner">
           <?php the_field('box_two_content', 'options') ?>
           <div class="form-cta">
-            <form class="mcForms" action="https://crosskeydesigns.us1.list-manage.com/subscribe/post?u=dd25a7dace2f20cdfbf03f522&id=b50cdbe23c">
+            <form class="mcForms" action="https://JRBees.us18.list-manage.com/subscribe/post?u=ff7dd6267f87b5edda4f367c4&id=431a0702bc">
               <div class="input">
                 <input type="email" name="EMAIL" placeholder="email@gmail.com">
                 <input type="hidden" name="" class="honeypot">

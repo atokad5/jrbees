@@ -27,7 +27,7 @@
     <div class="is-y">
     <div class="inner">
       <div class="signup">
-        <form action="https://crosskeydesigns.us1.list-manage.com/subscribe/post?u=dd25a7dace2f20cdfbf03f522&id=b50cdbe23c" class="navbar-form mcFormsNav">
+        <form action="https://JRBees.us18.list-manage.com/subscribe/post?u=ff7dd6267f87b5edda4f367c4&id=431a0702bc" class="navbar-form mcFormsNav">
           <label for="email-bar">Get Up-to-date on Bee Related News</label>
           <span class="email-container">
             <input id="email-bar" type="email" name="EMAIL" placeholder="Email Address">
