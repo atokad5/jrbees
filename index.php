@@ -33,5 +33,8 @@
     <h1>This is a Title</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias exercitationem nostrum minima ipsum aspernatur perspiciatis tenetur velit sapiente? Consequuntur ratione omnis eaque error placeat veritatis odio libero? Accusamus, sed repudiandae.</p>
   </section>
-</main>
+<!-- </main> -->
+
+
+
 <?php get_footer(); ?>
