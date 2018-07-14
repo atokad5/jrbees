@@ -13,6 +13,7 @@ import Masonry from 'masonry-layout'
 import gallery from './gallery.js'
 import equal from './equal.js'
 import util from './util.js'
+import reviews from './reviews.js'
 window.Cookies = jsCookie;
 window.Masonry = Masonry;
 homeHero();
@@ -25,3 +26,4 @@ accordion();
 equal();
 gallery();
 util();
+reviews();

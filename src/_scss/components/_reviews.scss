@@ -1,0 +1,78 @@
+.review-nest {
+  padding-bottom: 3em;
+  &:after {
+    content: '';
+    @include clearfix();
+  }
+}
+.review-el {
+  // width: 31%;
+  margin-bottom: 2em;
+  box-shadow: 0px 0px 10px rgba(black, 0.1);
+  position: relative;
+  // float: left;
+  // margin-right: (7% / 3);
+  &:last-of-type {
+    margin-right: 0em;
+  }
+
+  svg {
+    width: 50%;
+    top: 50%;
+    fill: #f2f2f2;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+  }
+}
+
+.review-el-inner {
+  padding: 2em;
+  z-index: 3;
+  position: relative;
+}
+.review-content {
+  position: relative;
+  z-index: 9;
+  a {
+    color: $primaryColor;
+    font-weight: bolder;
+    transition: opacity 200ms ease;
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.yelp-title {
+  padding-bottom: 1em;
+  font-size: 2em;
+}
+
+@media(min-width: $sm ) {
+  .review-el {
+    width: 31%;
+    margin-bottom: 0em;
+    box-shadow: 0px 0px 10px rgba(black, 0.1);
+    position: relative;
+    float: left;
+    margin-right: (7% / 3);
+    &:last-of-type {
+      margin-right: 0em;
+    }
+  
+    svg {
+      width: 50%;
+      top: 50%;
+      fill: #f2f2f2;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      position: absolute;
+    }
+  }
+  .review-el-inner {
+    // padding: 1.4em;
+    z-index: 3;
+    position: relative;
+  }
+}

@@ -75,10 +75,15 @@
 
   h1 {
     color: white;
-    padding-bottom: 1em;
+    padding-bottom: 0.4em;
     margin: 0em;
     line-height: 1;
     font-size: 2.2em;
+  }
+  h4 {
+    color: white;
+    font-size: 1.4em;
+    padding-bottom: 0.5em;
   }
 }
 
@@ -86,7 +91,7 @@
   color: white;
   width: 95%;
   max-width: 800px;
-  margin: auto;
+  
 
   img {
     display: none;
@@ -194,4 +199,15 @@ footer ul {
     }
   }
   
+}
+.inputTwo {
+  position: relative;
+}
+
+.featured-article--inner {
+  p {
+    color: white;
+    max-width: 800px;
+    margin: auto;
+  }
 }

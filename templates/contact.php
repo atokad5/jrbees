@@ -35,9 +35,17 @@
 	</div>
 
 
+
 	<section class="content--group is-parent-el--padding no-padding-btm">
 		<div class="inner">
 			<div class="content--area has-form">
+				<h1 class="yelp-title">Most Recent Yelp Reviews</h1>
+				<div class="review-nest">
+				
+				
+				</div>
+
+
 				<div class="form-content">
 					<?php the_field('contact_text'); ?>
 					<?php $showSocial = get_field('show_social'); ?>
@@ -51,6 +59,7 @@
 						</div>
 					<?php } ?>
 				</div>
+		
 				<?php echo do_shortcode('[contact-form-7 id="280" title="Contact form 1"]'); ?>
 					<!-- <?php while ( have_posts() ) : the_post(); ?>			
 					<?php the_content();  ?>

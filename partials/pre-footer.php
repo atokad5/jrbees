@@ -10,11 +10,10 @@
 
     <div class="featured-article">
       <div class="featured-article--inner">
-        <h1><?php echo $featuredBlog->post_title; ?></h1>
-        <div class="featured-article-excerpt">
-          <?php echo $featuredBlog->post_content; ?>
-        </div>
-        <a href="<?php echo $featuredUrl; ?>" class="cta">Read Story</a>
+      <?php the_field('box_one_content', 'options') ?>
+          <a href="<?php the_field('box_one_cta_link' , 'options'); ?>" class="cta">
+            <?php the_field('box_one_cta_link_text', 'options'); ?>
+          </a>
       </div>
       <div class="is-hero--bg is-bg" data-bg-src="<?php echo $featuredImg['url']; ?>"></div>
     </div>
@@ -25,10 +24,12 @@
 
       <div class="is-cta-el">
         <div class="is-cta--liner">
-          <?php the_field('box_one_content', 'options') ?>
-          <a href="<?php the_field('box_one_cta_link' , 'options'); ?>" class="cta">
-            <?php the_field('box_one_cta_link_text', 'options'); ?>
-          </a>
+          
+          <h1><?php echo $featuredBlog->post_title; ?></h1>
+        <div class="featured-article-excerpt">
+          <?php echo $featuredBlog->post_content; ?>
+        </div>
+        <a href="<?php echo $featuredUrl; ?>" class="cta">Read Story</a>
         </div>
       </div>
 
