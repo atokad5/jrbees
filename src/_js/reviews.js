@@ -21,7 +21,7 @@ export default function() {
           let url = entryPoint.url;
           
           
-          console.log(entryPoint)
+          // console.log(entryPoint)
           $reviewContainer.append(`
             <div class="review-el">
               <div class="review-el-inner">

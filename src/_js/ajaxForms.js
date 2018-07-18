@@ -28,6 +28,7 @@ export default function() {
 
 		let sendData = (e) => {
 			e.preventDefault();
+	
 			let $t = $(e.currentTarget);
 			let $formTarget = $t.attr('action').replace('post', 'post-json')+'&c=?';
 
@@ -37,9 +38,14 @@ export default function() {
 					method: 'POST',
 					dataType: 'jsonp',
 					data: $t.serialize(),
+					beforeSend: function() {
+						input.hide();
+						msg.html('loading...')
+					},
 					success: function(data) {
+						console.log('success')
+			
 						if(data.result === "success") {
-							input.hide();
 							msg.html(data.msg)
 							Cookies.set('formInput', 'formFilled', { expires: 365 });
 						}
@@ -60,10 +66,14 @@ export default function() {
 					method: 'POST',
 					dataType: 'jsonp',
 					data: $t.serialize(),
+					beforeSend: function() {
+						msgTwo.html('loading...');
+						inputTwo.hide();
+					},
 					success: function(data) {
 	
 						if(data.result === "success") {
-							inputTwo.hide();
+							
 							msgTwo.html(data.msg)
 							Cookies.set('formInput', 'formFilled', { expires: 365 });
 						}
